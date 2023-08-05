@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Socialmedia.Socialmedia.Entity.Status;
 import com.Socialmedia.Socialmedia.Service.StatusService;
 
-@CrossOrigin 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/status")
 public class StatusController {

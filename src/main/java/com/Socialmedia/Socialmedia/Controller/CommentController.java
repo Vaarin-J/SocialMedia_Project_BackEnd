@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Socialmedia.Socialmedia.Entity.Comment;
 import com.Socialmedia.Socialmedia.Service.CommentService;
 
-@CrossOrigin 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/comment")
 public class CommentController {

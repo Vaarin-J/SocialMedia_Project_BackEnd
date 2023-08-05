@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Socialmedia.Socialmedia.Entity.Post;
 import com.Socialmedia.Socialmedia.Service.PostService;
 
-@CrossOrigin 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/post")
 public class PostController {

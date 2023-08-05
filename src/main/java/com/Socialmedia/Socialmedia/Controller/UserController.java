@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.Socialmedia.Socialmedia.Entity.Users;
 import com.Socialmedia.Socialmedia.Service.UserService;
 
-@CrossOrigin 
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/users")
 public class UserController {
